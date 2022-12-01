@@ -13,8 +13,10 @@
     "alchemy-sdk": "^2.2.3",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
+    "ethers": "^5.7.2",
     "next": "13.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "web3": "^1.8.1"
   }
 }
