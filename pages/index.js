@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Alchemy, Network } from 'alchemy-sdk';
 import { useEffect, useState } from 'react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 // import Web3 from 'web3';
 // import { ethers } from "ethers";
 
@@ -50,7 +51,7 @@ export default function Home({ bn }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section style={{
+      {/* <section style={{
         position: 'absolute',
         right: '2em',
         top: '2em'
@@ -74,12 +75,20 @@ export default function Home({ bn }) {
           </>
           :
           <p>install metamask</p>}
+      </section> */}
+      <section style={{
+        position: 'absolute',
+        right: '2em',
+        top: '2em'
+      }}>
+        <ConnectButton />
       </section>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           buy me a cofee onchain
         </h1>
+
       </main>
 
       <footer className={styles.footer}>
